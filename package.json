@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "info-expert": "node src/information-expert.js",
-    "polymorphism": "node src/polymorphism.js",
-    "grasp-all": "npm run info-expert && npm run polymorphism"
+    "sem-creator": "node src/semCreator.js",
+    "com-creator": "node src/comCreator.js",
+    "grasp-all": "npm run sem-creator && npm run com-creator"
   }
 }
