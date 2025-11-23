@@ -1,0 +1,28 @@
+class Produto {
+    constructor(nome, preco, tipo, quantidade, tamanho) {
+        this.nome = nome;
+        this.preco = preco;
+        this.tipo = tipo;
+        this.quantidade = quantidade;
+        this.tamanho = tamanho;
+    }
+}
+
+class Carrinho {
+    constructor() {
+        this.itens = [];
+    }
+
+    adicionarProduto(nome, preco, tipo, quantidade, tamanho) {
+        const novoProduto = new Produto(nome, preco, tipo, quantidade, tamanho);
+        this.itens.push(novoProduto);
+    }
+}
+
+
+const carrinho = new Carrinho();
+
+carrinho.adicionarProduto("Camiseta", 49.90, "roupa", 1, "M");
+carrinho.adicionarProduto("Tênis", 259.90, "sapato", 1, "42");
+
+console.log("Carrinho (COM Creator):", carrinho);

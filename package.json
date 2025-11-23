@@ -1,0 +1,10 @@
+{
+  "name": "grasp-examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "info-expert": "node src/information-expert.js",
+    "polymorphism": "node src/polymorphism.js",
+    "grasp-all": "npm run info-expert && npm run polymorphism"
+  }
+}
