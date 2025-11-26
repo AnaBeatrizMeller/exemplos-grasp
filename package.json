@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sem-creator": "node src/semCreator.js",
-    "com-creator": "node src/comCreator.js",
-    "grasp-all": "npm run sem-creator && npm run com-creator"
+    "creator": "node src/creator.js",
+    "low-coupling": "node src/lowCoupling.js",
+    "grasp-all": "npm run creator && npm run low-coupling"
   }
 }
